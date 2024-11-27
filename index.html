@@ -1,72 +1,47 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZAM ZAM Mobile Repairing & Sales Shop</title>
+    <title>ZAM ZAM Mobile Repairing</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- Header Section -->
-    <header>
-        <div class="logo-container">
-            <img src="images/logo.png" alt="ZAM ZAM Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="hero">
+        <h1>Welcome to ZAM ZAM Mobile Repairing</h1>
+        <p>Your one-stop solution for mobile repairs and accessories.</p>
     </header>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero-section">
-        <div class="hero-content">
-            <h1>Welcome to ZAM ZAM Mobile Repairing & Sales Shop</h1>
-            <p>Your one-stop solution for mobile repair and accessories.</p>
-            <a href="#services" class="cta-button">Explore Our Services</a>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services-section">
+    <nav>
+        <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="services">
         <h2>Our Services</h2>
-        <div class="service-cards">
-            <div class="service-card">
-                <h3>Mobile Repairing</h3>
-                <p>Fast and reliable mobile repair services.</p>
-            </div>
-            <div class="service-card">
-                <h3>Mobile Accessories Sales</h3>
-                <p>Wide variety of accessories for all mobile brands.</p>
-            </div>
-            <div class="service-card">
-                <h3>Gadget Customizations</h3>
-                <p>Customize your gadgets to fit your style.</p>
-            </div>
-        </div>
+        <p>We specialize in all kinds of mobile repairs, including screen replacement, battery issues, and software fixes.</p>
     </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+    <section id="products">
+        <h2>Accessories for Sale</h2>
+        <p>Explore a wide range of mobile accessories including covers, chargers, headphones, and more.</p>
+    </section>
+    <section id="contact">
         <h2>Contact Us</h2>
-        <p>For inquiries, call us at +91 9172610778</p>
-        <form action="#" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
         </form>
     </section>
-
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 ZAM ZAM Mobile Repairing & Sales Shop. All Rights Reserved.</p>
+        <p>&copy; 2024 ZAM ZAM Mobile Repairing. All Rights Reserved.</p>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
