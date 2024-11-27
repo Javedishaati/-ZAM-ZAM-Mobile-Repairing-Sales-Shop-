@@ -1,4 +1,3 @@
 
-document.addEventListener("DOMContentLoaded", () => {
-    console.log("Website Loaded Successfully!");
-});
+// You can add interactive functionality here (e.g., form validation, animations).
+console.log("ZAM ZAM Mobile Repairing & Sales Shop website loaded!");

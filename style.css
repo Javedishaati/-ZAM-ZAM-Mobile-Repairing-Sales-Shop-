@@ -1,66 +1,150 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZAM ZAM Mobile Repairing & Sales Shop</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header class="main-header">
-        <div class="logo-container">
-            <img src="images/logo.png" alt="ZAM ZAM Mobile & Gadgets Logo">
-        </div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero-section">
-            <h1>Welcome to ZAM ZAM Mobile Repairing & Sales Shop</h1>
-            <p>Your Trusted Partner for Mobile Repairs and Accessories</p>
-            <a href="#services" class="cta-button">Explore Services</a>
-        </section>
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
 
-        <!-- Services Section -->
-        <section id="services" class="services-section">
-            <h2>Our Services</h2>
-            <div class="service-cards">
-                <div class="service-card">
-                    <h3>Mobile Repairing</h3>
-                    <p>Quick and reliable mobile repair services.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Mobile Accessories</h3>
-                    <p>High-quality accessories for all your needs.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Gadget Customizations</h3>
-                    <p>Personalize your gadgets with our customization services.</p>
-                </div>
-            </div>
-        </section>
+h1, h2, h3 {
+    color: #e63946;
+}
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section">
-            <h2>Contact Us</h2>
-            <p>Get in touch with us for any inquiries!</p>
-            <p><strong>Phone:</strong> +91 9172610778</p>
-            <form action="#" method="post">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    </main>
-    <footer class="footer">
-        <p>&copy; 2024 ZAM ZAM Mobile Repairing & Sales Shop. All Rights Reserved.</p>
-    </footer>
-</body>
-</html>
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1d3557;
+    padding: 20px;
+}
+
+header .logo-container img {
+    max-width: 150px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #e63946;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #e63946;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #d62828;
+}
+
+/* Services Section */
+.services-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f1faee;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 300px;
+}
+
+.service-card h3 {
+    color: #1d3557;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/* Contact Section */
+.contact-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-section input, .contact-section textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-section button {
+    padding: 10px;
+    background-color: #e63946;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.contact-section button:hover {
+    background-color: #d62828;
+}
+
+/* Footer */
+footer {
+    background-color: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
