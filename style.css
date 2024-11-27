@@ -1,52 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZAM ZAM Mobile Repairing & Sales Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="images/logo.png" alt="ZAM ZAM Mobile & Gadgets Logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <h1>Welcome to ZAM ZAM Mobile Repairing & Sales Shop</h1>
+            <p>Your Trusted Partner for Mobile Repairs and Accessories</p>
+            <a href="#services" class="cta-button">Explore Services</a>
+        </section>
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <h2>Our Services</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <h3>Mobile Repairing</h3>
+                    <p>Quick and reliable mobile repair services.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Mobile Accessories</h3>
+                    <p>High-quality accessories for all your needs.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Gadget Customizations</h3>
+                    <p>Personalize your gadgets with our customization services.</p>
+                </div>
+            </div>
+        </section>
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
-
-header .logo img {
-    max-width: 150px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.hero {
-    background: #f4f4f4;
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.services, .contact {
-    padding: 20px;
-    text-align: center;
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-}
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us for any inquiries!</p>
+            <p><strong>Phone:</strong> +91 9172610778</p>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 ZAM ZAM Mobile Repairing & Sales Shop. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
